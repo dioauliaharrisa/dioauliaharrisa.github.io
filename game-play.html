@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hacktiv8-100!!</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link rel="stylesheet" href="game-play.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles&family=Roboto&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <h1 id="guestName" style="position: absolute; top: 0; left: 50px; color: red; font-size: 50px;"></h1>
+    <img id='hundredlogo' src='hacktiv8-100-pic.png'>
+    <div class='container'>
+        <div class="box-container">
+            <h1 id='question'>Pertanyaan</h1>
+            <form onsubmit="onClickAnswer(event)">
+                <input id="answerBar" type="text" placeholder="Type your answer here">
+                <input id='submitButton' type="submit" value="Submit the answer">
+            </form>
+            <div>
+                <progress value="0" max="30" id="progressBar"></progress>
+            </div>
+            <div>
+                <table border="1">
+                    <tbody id="userAnswer">
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="game-play.js"></script>
+    <embed src="Family Feud Theme Song (Harvey era).mp3" loop="true" autostart="true" width="2" height="0">
+</body>
+
+</html>

@@ -1,0 +1,156 @@
+html,
+body {
+    display: flex;
+    justify-content: center;
+    font-family: Fuzzy Bubbles, Roboto, Arial, sans-serif;
+    font-size: 15px;
+}
+
+.form {
+    border: 5px solid #f1f1f1;
+    background-color: rgba(218, 137, 32, 0.795);
+    border-radius: 20px;
+}
+
+input[type=text],
+input[type=password] {
+    width: 100%;
+    padding: 16px 8px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #8ebf42;
+    color: white;
+    padding: 14px 0;
+    margin: 10px 0;
+    border: none;
+    cursor: grabbing;
+    width: 100%;
+}
+
+h1 {
+  text-align: center;
+  font-size: 18;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+.formcontainer {
+  text-align: left;
+  margin: 24px 50px 12px;
+}
+
+.container {
+  padding: 16px 0;
+  text-align: left;
+}
+
+span.psw {
+  float: right;
+  padding-top: 0;
+  padding-right: 15px;
+}
+
+/* Change styles for span on extra small screens */
+@media screen and (max-width: 300px) {
+    span.psw {
+        display: block;
+        float: none;
+    }
+  }
+
+/* ////////////////////////////////////////////// */
+body{
+  margin-top: 20px;
+  background: #f6f9fc;
+}
+.account-block {
+  padding: 0;
+  background-image: url(https://bootdey.com/img/Content/bg1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  position: relative;
+}
+
+.account-block .overlay {
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.account-block .account-testimonial {
+  text-align: center;
+  color: #fff;
+  position: absolute;
+  margin: 0 auto;
+  padding: 0 1.75rem;
+  bottom: 3rem;
+  left: 0;
+  right: 0;
+}
+
+.text-theme {
+  color: #5369f8 !important;
+}
+
+.btn-theme {
+  background-color: #5369f8;
+  border-color: #5369f8;
+  color: #fff;
+}
+
+/* ////////////////////////////////////////////////////////////////////// */
+.bg {
+  animation: slide 3s ease-in-out infinite alternate;
+  background-image: linear-gradient(-60deg, rgb(235, 206, 44) 50%, rgb(235, 44, 44) 50%);
+  bottom: 0;
+  left:-50%;
+  opacity:.5;
+  position:fixed;
+  right:-50%;
+  top:0;
+  z-index:-1;
+}
+
+.bg2 {
+  animation-direction: alternate-reverse;
+  animation-duration: 4s;
+}
+
+.bg3 {
+  animation-duration:5s;
+}
+
+.content {
+  background-color:rgba(255,255,255,.8);
+  border-radius:.25em;
+  box-shadow:0 0 .25em rgba(0,0,0,.25);
+  box-sizing:border-box;
+  left:50%;
+  padding:10vmin;
+  position:fixed;
+  text-align:center;
+  top:50%;
+  transform:translate(-50%, -50%);
+}
+
+@keyframes slide {
+  0% {
+    transform:translateX(-25%);
+  }
+  100% {
+    transform:translateX(25%);
+  }
+}
